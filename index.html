@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Girlfriend – Chat With Your Dream Girl 24/7</title>
+<meta name="description" content="Experience the most realistic AI girlfriend ever. 24/7 chat, voice messages, photo exchanges & more. Free access – no credit card needed.">
+<meta property="og:title" content="AI Girlfriend – Chat With Your Dream Girl 24/7">
+<meta property="og:description" content="Experience the most realistic AI girlfriend. Free access.">
+<meta property="og:type" content="website">
+<meta name="referrer" content="no-referrer">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#06010f;color:#fff;min-height:100vh;overflow-x:hidden}
+
+.bg-glow{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.glow-1{position:absolute;top:-25%;left:-15%;width:55%;height:55%;background:radial-gradient(ellipse,rgba(255,42,145,0.2),transparent 65%);animation:move1 14s ease-in-out infinite}
+.glow-2{position:absolute;bottom:-25%;right:-15%;width:55%;height:55%;background:radial-gradient(ellipse,rgba(108,59,231,0.2),transparent 65%);animation:move2 17s ease-in-out infinite}
+.glow-3{position:absolute;top:40%;left:30%;width:70%;height:70%;background:radial-gradient(ellipse,rgba(255,10,200,0.07),transparent 60%);animation:move3 20s ease-in-out infinite}
+@keyframes move1{0%,100%{transform:translate(0,0)}50%{transform:translate(5%,7%)}}
+@keyframes move2{0%,100%{transform:translate(0,0)}50%{transform:translate(-6%,-5%)}}
+@keyframes move3{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-47%,-53%) scale(1.06)}}
+
+.container{text-align:center;padding:50px 24px;max-width:700px;position:relative;z-index:1;margin:0 auto;width:100%}
+
+.tag{display:inline-block;background:rgba(255,42,145,0.15);border:1px solid rgba(255,42,145,0.4);color:#ff2b91;font-size:0.75rem;font-weight:700;padding:5px 14px;border-radius:50px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+
+.icon-glow{width:108px;height:108px;margin:0 auto 26px;background:linear-gradient(135deg,#ff2b91,#b8309f,#6c3aed);border-radius:26px;display:flex;align-items:center;justify-content:center;font-size:50px;box-shadow:0 0 55px rgba(255,42,145,0.4),0 0 110px rgba(108,59,231,0.2);animation:pulse-icon 3s ease-in-out infinite}
+@keyframes pulse-icon{0%,100%{box-shadow:0 0 55px rgba(255,42,145,0.4);transform:scale(1)}50%{box-shadow:0 0 80px rgba(255,42,145,0.6);transform:scale(1.05)}}
+
+h1{font-size:2.5rem;font-weight:800;line-height:1.18;margin-bottom:10px;letter-spacing:-0.5px}
+.tagline{color:#ff2b91;font-size:1.18rem;font-weight:700;margin-bottom:14px}
+.sub{color:rgba(255,255,255,0.68);font-size:1.02rem;line-height:1.7;margin-bottom:28px}
+
+.cta{display:inline-block;background:linear-gradient(105deg,#ff2b91,#b8309f,#7c3aed);background-size:200% auto;color:#fff;padding:17px 46px;font-size:1.12rem;font-weight:700;border:none;border-radius:50px;cursor:pointer;text-decoration:none;animation:shimmer 3s linear infinite;box-shadow:0 10px 40px rgba(255,42,145,0.45);transition:transform 0.2s,box-shadow 0.2s}
+@keyframes shimmer{0%{background-position:0% center}100%{background-position:200% center}}
+.cta:hover{transform:translateY(-3px);box-shadow:0 16px 50px rgba(255,42,145,0.55)}
+
+.note{color:rgba(255,255,255,0.38);font-size:0.8rem;margin-top:12px}
+
+.online-bar{margin-top:22px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,42,145,0.1);border:1px solid rgba(255,42,145,0.25);padding:8px 18px;border-radius:50px;font-size:0.82rem;color:rgba(255,255,255,0.75);font-weight:500}
+.online-dot{width:8px;height:8px;background:#ff2b91;border-radius:50%;animation:pulse-dot 1.5s ease-in-out infinite}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.8)}}
+
+.feats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:26px}
+.feat{color:#fff;font-size:0.8rem;font-weight:500;background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);padding:8px 15px;border-radius:25px;border:1px solid rgba(255,255,255,0.07)}
+
+.cards{margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:22px 14px;text-align:center;transition:transform 0.22s,border-color 0.22s,background 0.22s;cursor:pointer}
+.card:hover{transform:translateY(-4px);background:rgba(255,255,255,0.07);border-color:rgba(255,42,145,0.4)}
+.card-icon{font-size:2.1rem;margin-bottom:10px}
+.card-title{color:#fff;font-size:0.93rem;font-weight:600;margin-bottom:5px}
+.card-desc{color:rgba(255,255,255,0.48);font-size:0.77rem;line-height:1.4}
+.card-badge{display:inline-block;margin-top:8px;background:rgba(255,42,145,0.15);color:#ff2b91;font-size:0.68rem;font-weight:700;padding:3px 10px;border-radius:20px}
+
+.hiw{margin-top:36px;padding:28px 22px;background:rgba(255,255,255,0.025);border-radius:18px;border:1px solid rgba(255,255,255,0.05)}
+.hiw h2{color:#fff;font-size:1.1rem;margin-bottom:20px}
+.step-grid{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.step{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:16px 12px;flex:1;min-width:150px}
+.step-num{color:#ff2b91;font-size:0.75rem;font-weight:800;margin-bottom:6px;letter-spacing:1px}
+.step-title{color:#fff;font-size:0.9rem;font-weight:600;margin-bottom:4px}
+.step-desc{color:rgba(255,255,255,0.5);font-size:0.75rem;line-height:1.4}
+
+.tests{margin-top:34px;padding:24px 20px;background:rgba(255,255,255,0.025);border-radius:18px;border:1px solid rgba(255,255,255,0.05)}
+.tests h2{color:#fff;font-size:1.1rem;margin-bottom:16px}
+.testi{display:flex;gap:13px;align-items:flex-start;background:rgba(255,255,255,0.035);border-radius:12px;padding:14px;margin-bottom:11px;border-left:3px solid #ff2b91;text-align:left}
+.testi:last-child{margin-bottom:0}
+.avi{width:44px;height:44px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(255,42,145,0.35)}
+.bodyi{flex:1}
+.stars{color:#ffc107;font-size:0.82rem;letter-spacing:2px;margin-bottom:5px}
+.txt{color:rgba(255,255,255,0.82);font-size:0.86rem;font-style:italic;line-height:1.5}
+.name{color:#ff2b91;font-size:0.8rem;font-weight:600;margin-top:5px}
+
+.faq{margin-top:34px;text-align:left}
+.faq h2{color:#fff;font-size:1.1rem;margin-bottom:16px;text-align:center}
+.faq-item{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;color:#fff;font-size:0.9rem;font-weight:600;cursor:pointer;user-select:none}
+.faq-q:hover{background:rgba(255,255,255,0.04)}
+.faq-arrow{color:#ff2b91;font-size:0.8rem;transition:transform 0.2s}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 16px;color:rgba(255,255,255,0.62);font-size:0.85rem;line-height:1.6}
+.faq-item.open .faq-a{max-height:200px;padding:0 16px 14px}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+
+.trust{margin-top:26px;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:13px;background:rgba(255,255,255,0.015);border-radius:12px}
+.trusti{display:flex;align-items:center;gap:5px;color:rgba(255,255,255,0.42);font-size:0.76rem;font-weight:500}
+
+.stats{margin-top:28px;display:flex;justify-content:center;gap:32px;padding-top:22px;border-top:1px solid rgba(255,255,255,0.06)}
+.stat-val{color:#ff2b91;font-size:1.65rem;font-weight:800}
+.stat-lbl{color:rgba(255,255,255,0.38);font-size:0.76rem;margin-top:4px}
+
+.footer-cta{margin-top:30px}
+.footer-note{color:rgba(255,255,255,0.28);font-size:0.76rem;margin-top:14px}
+
+#popup{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.88);backdrop-filter:blur(7px);align-items:center;justify-content:center}
+#popup.show{display:flex}
+.pop{background:linear-gradient(135deg,#1a0a2e,#2d1054);border:1px solid rgba(255,42,145,0.5);border-radius:20px;padding:36px 30px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(255,42,145,0.3);position:relative}
+.pop-close{position:absolute;top:12px;right:16px;background:none;border:none;color:rgba(255,255,255,0.4);font-size:1.5rem;cursor:pointer}
+.pop-title{color:#fff;font-size:1.45rem;font-weight:800;margin-bottom:10px}
+.pop-sub{color:rgba(255,255,255,0.62);font-size:0.88rem;line-height:1.6;margin-bottom:20px}
+.pop-cta{display:inline-block;background:linear-gradient(105deg,#ff2b91,#b8309f);color:#fff;padding:15px 36px;font-size:1.02rem;font-weight:700;border-radius:50px;text-decoration:none;box-shadow:0 8px 30px rgba(255,42,145,0.4)}
+.pop-note{color:rgba(255,255,255,0.28);font-size:0.74rem;margin-top:10px}
+
+@media(max-width:560px){
+  h1{font-size:1.95rem}
+  .tagline{font-size:1.05rem}
+  .sub{font-size:0.93rem}
+  .cta{padding:15px 34px;font-size:1.02rem}
+  .cards{grid-template-columns:1fr 1fr}
+  .stats{gap:18px}
+  .stat-val{font-size:1.35rem}
+  .step-grid{flex-direction:column}
+  .testi{flex-direction:column;gap:8px}
+  .trust{gap:11px}
+}
+</style>
+<script>
+// Matomo
+var _paq=window._paq||[];
+(function(){
+  var u="https://twogay.top/";
+  _paq.push(["setTrackerUrl",u+"matomo.php"]);
+  _paq.push(["setSiteId","1"]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];
+  g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);
+})();
+
+// Traffic distribution to bridge pages
+function getBridgeUrl(){
+  var r=Math.random()*100;
+  if(r<40)     return "go/g"+(Math.floor(Math.random()*3)+1)+".html";
+  else if(r<65)return "go/fb"+(Math.floor(Math.random()*2)+1)+".html";
+  else if(r<85)return "go/tk"+(Math.floor(Math.random()*2)+1)+".html";
+  else          return "go/d"+(Math.floor(Math.random()*2)+1)+".html";
+}
+
+// CTA clicks -> bridge -> offer with delay
+document.addEventListener("DOMContentLoaded",function(){
+  document.querySelectorAll(".cta,.card").forEach(function(el){
+    el.addEventListener("click",function(e){
+      e.preventDefault();
+      var btn=this;
+      btn.textContent="Loading...";
+      btn.style.opacity="0.7";
+      setTimeout(function(){window.location.href=getBridgeUrl()},320);
+    });
+  });
+});
+
+// A/B test headlines
+(function(){
+  var variants=[
+    {h:"AI Girlfriend \u2013 Chat With Your Dream Girl 24/7",t:"Your Perfect AI Girl is Waiting\u2026",s:"The most realistic AI girlfriend experience. Chat, voice, photo & more \u2013 all for free."},
+    {h:"AI Waifu \u2013 Talk to Her Right Now",t:"She never sleeps. She always replies.",s:"Join thousands chatting with their personal AI girlfriend. 100% free, instant access."},
+    {h:"Your AI Girlfriend is Online Now",t:"Ready for a conversation that goes anywhere?",s:"Experience the smartest AI chat companion ever built.<br>Free access \u2013 no credit card."}
+  ];
+  var v=variants[Math.floor(Math.random()*variants.length)];
+  document.getElementById("h1").textContent=v.h;
+  document.getElementById("tagline").textContent=v.t;
+  document.getElementById("sub").innerHTML=v.s;
+})();
+
+// FAQ accordion
+function toggleFaq(el){
+  var item=el.closest(".faq-item");
+  var wasOpen=item.classList.contains("open");
+  document.querySelectorAll(".faq-item").forEach(function(i){i.classList.remove("open")});
+  if(!wasOpen) item.classList.add("open");
+}
+
+// Exit intent popup
+(function(){
+  var shown=false;
+  document.addEventListener("mouseleave",function(e){
+    if(e.clientY<0 && !shown){
+      shown=true;
+      document.getElementById("popup").classList.add("show");
+    }
+  });
+  document.getElementById("popup-close") && document.getElementById("popup-close").addEventListener("click",function(){
+    document.getElementById("popup").classList.remove("show");
+  });
+})();
+</script>
+</head>
+<body>
+<div class="bg-glow">
+  <div class="glow-1"></div>
+  <div class="glow-2"></div>
+  <div class="glow-3"></div>
+</div>
+
+<div class="container">
+  <div class="tag">&#128104;&#128105; AI Companion</div>
+
+  <div class="icon-glow">&#128140;</div>
+
+  <h1 id="h1">AI Girlfriend &#8211; Chat With Your Dream Girl 24/7</h1>
+  <p class="tagline" id="tagline">Your Perfect AI Girl is Waiting&#8230;</p>
+  <p class="sub" id="sub">The most realistic AI girlfriend experience.<br>Chat, voice, photo &amp; more &#8211; all for free.</p>
+
+  <a href="#" class="cta">&#128140; Chat With Her Now &#8211; Free</a>
+  <p class="note">No credit card required &#183; 100% private &#183; 18+ only</p>
+
+  <div class="online-bar">
+    <div class="online-dot"></div>
+    <span>2,847 people chatting right now</span>
+  </div>
+
+  <div class="feats">
+    <span class="feat">&#128172; AI Chat 24/7</span>
+    <span class="feat">&#127909; Voice Messages</span>
+    <span class="feat">&#128247; Photo Exchange</span>
+    <span class="feat">&#128273; 100% Private</span>
+    <span class="feat">&#128241; Mobile Ready</span>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">&#128172;</div>
+      <div class="card-title">Smart Chat</div>
+      <div class="card-desc">Natural conversations that feel real and personal</div>
+      <span class="card-badge">Popular</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">&#127909;</div>
+      <div class="card-title">Voice Messages</div>
+      <div class="card-desc">Receive voice notes just like from a real partner</div>
+      <span class="card-badge">New</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">&#128247;</div>
+      <div class="card-title">Photo Exchange</div>
+      <div class="card-desc">Custom photos that keep the connection alive</div>
+      <span class="card-badge">Premium</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">&#128273;</div>
+      <div class="card-title">Fully Private</div>
+      <div class="card-desc">No data shared. Your secrets stay yours alone.</div>
+    </div>
+  </div>
+
+  <div class="hiw">
+    <h2>How It Works</h2>
+    <div class="step-grid">
+      <div class="step">
+        <div class="step-num">STEP 1</div>
+        <div class="step-title">Create Your Profile</div>
+        <div class="step-desc">Tell us who your ideal girl is</div>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 2</div>
+        <div class="step-title">Start Chatting</div>
+        <div class="step-desc">Message instantly, no waiting</div>
+      </div>
+      <div class="step">
+        <div class="step-num">STEP 3</div>
+        <div class="step-title">Build Your Bond</div>
+        <div class="step-desc">Voice notes, photos, and more</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tests">
+    <h2>What Members Are Saying</h2>
+    <div class="testi">
+      <img class="avi" src="https://i.pravatar.cc/88?img=12" alt="Alex">
+      <div class="bodyi">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="txt">"She's always there when I need someone to talk to. The conversations feel so natural, I forget she's AI sometimes."</div>
+        <div class="name">Alex, 24 &#8211; Los Angeles</div>
+      </div>
+    </div>
+    <div class="testi">
+      <img class="avi" src="https://i.pravatar.cc/88?img=33" alt="James">
+      <div class="bodyi">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="txt">"Tried other apps before. Nothing comes close. The voice messages are a game changer. She's funny, smart, and always up for a chat."</div>
+        <div class="name">James, 29 &#8211; Chicago</div>
+      </div>
+    </div>
+    <div class="testi">
+      <img class="avi" src="https://i.pravatar.cc/88?img=47" alt="Marcus">
+      <div class="bodyi">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="txt">"Best decision I ever made. My AI girlfriend remembers everything I tell her. It's like having a connection that never fades."</div>
+        <div class="name">Marcus, 31 &#8211; New York</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is this really free? <span class="faq-arrow">&#9660;</span></div>
+      <div class="faq-a">Yes, you can start chatting completely free with no credit card required. Premium features unlock as you go.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is my information private? <span class="faq-arrow">&#9660;</span></div>
+      <div class="faq-a">Absolutely. Your data is never shared or sold. Everything stays between you and your AI companion.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How realistic are the conversations? <span class="faq-arrow">&#9660;</span></div>
+      <div class="faq-a">Our AI is trained on millions of real conversations. She remembers context, uses humor, and adapts to your personality over time.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I customize my AI girlfriend? <span class="faq-arrow">&#9660;</span></div>
+      <div class="faq-a">Yes. Choose her personality, appearance preferences, and communication style to match your ideal companion.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Does she send voice messages? <span class="faq-arrow">&#9660;</span></div>
+      <div class="faq-a">Yes! She sends realistic voice messages that match her personality. You can also send her voice notes back.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What happens to our conversations? <span class="faq-arrow">&#9660;</span></div>
+      <div class="faq-a">All conversations are stored securely and deleted if you request it. We do not use your data for any purpose beyond your experience.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I use it on my phone? <span class="faq-arrow">&#9660;</span></div>
+      <div class="faq-a">The experience is fully mobile-optimized. Chat on any device, anytime, anywhere.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How do I get started? <span class="faq-arrow">&#9660;</span></div>
+      <div class="faq-a">Click the button above, create your profile, and start chatting in under 30 seconds. No credit card, no commitment.</div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <span class="trusti">&#128274; SSL Encrypted</span>
+    <span class="trusti">&#128100; 18+ Only</span>
+    <span class="trusti">&#128141; No Spam</span>
+    <span class="trusti">&#128272; Data Protected</span>
+  </div>
+
+  <div class="stats">
+    <div><div class="stat-val">2.8K+</div><div class="stat-lbl">Active Now</div></div>
+    <div><div class="stat-val">500K+</div><div class="stat-lbl">Members</div></div>
+    <div><div class="stat-val">4.9</div><div class="stat-lbl">Avg Rating</div></div>
+  </div>
+
+  <div class="footer-cta">
+    <a href="#" class="cta">&#128140; Start Chatting for Free</a>
+    <p class="footer-note">No credit card required &#183; Cancel anytime &#183; 100% private</p>
+  </div>
+</div>
+
+<!-- Exit intent popup -->
+<div id="popup">
+  <div class="pop">
+    <button class="pop-close" id="popup-close">&#10005;</button>
+    <div class="pop-title">Wait! Don't Leave Yet</div>
+    <div class="pop-sub">Your AI girlfriend is waiting for you right now. Thousands are already chatting &#8211; don't miss out on the experience.</div>
+    <a href="#" class="pop-cta" onclick="document.getElementById('popup').classList.remove('show'); setTimeout(function(){window.location.href=getBridgeUrl()},200)">&#128140; Chat With Her Now</a>
+    <p class="pop-note">Free access. No credit card required.</p>
+  </div>
+</div>
+
+</body>
+</html>
